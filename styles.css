@@ -1,0 +1,333 @@
+/* Genel Ayarlar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f7f7f7;
+  color: #333;
+  line-height: 1.6;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Header - Navbar */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  z-index: 1000;
+}
+
+#nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+#nav-menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  flex-grow: 1;
+}
+
+#nav-menu ul li {
+  margin-right: 2rem;
+}
+
+#nav-menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s;
+}
+
+#nav-menu ul li a:hover {
+  background-color: #555;
+  border-radius: 4px;
+}
+
+/* Logo Sağda */
+.logo {
+  position: relative;
+  right: 0;
+  width: 100px; /* Logo boyutu */
+  height: auto;
+  cursor: pointer;
+}
+
+/* Hero (Ana Sayfa) */
+.hero {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("https://via.placeholder.com/1200x600?text=Cafe+Hero+Background");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 6rem 2rem;
+  max-width: 100%;
+  margin-top: 80px;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.hero button {
+  padding: 12px 24px;
+  background-color: #c0392b;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.hero button:hover {
+  background-color: #a93226;
+}
+
+/* Menü Kapsayıcı */
+.menu-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+/* Menü Bölümü */
+.menu-section {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #fff;
+}
+
+.menu-section h2 {
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Kategori Butonları */
+#menu-filters {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#menu-filters button {
+  padding: 10px 0;
+  width: calc(100% / 5 - 10px);
+  background-color: #c0392b;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+  font-size: 1.1rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-filters button:hover {
+  background-color: #a93226;
+  transform: scale(1.05);
+}
+
+/* Ürünler */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.menu-item {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+  overflow: hidden;
+}
+
+.menu-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.menu-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.menu-item img:hover {
+  transform: scale(1.1);
+}
+
+.menu-item h3 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+.menu-item p {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  color: #c0392b;
+}
+
+/* İletişim Bölümü */
+.contact-section {
+  background-color: #333;
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-section p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.contact-section a {
+  color: #c0392b;
+  font-size: 1.3rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.contact-section a:hover {
+  color: #a93226;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.contact-info div {
+  background-color: #444;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+}
+
+.contact-info div h4 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-info div p {
+  font-size: 1.1rem;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 1rem;
+}
+
+footer p {
+  margin-bottom: 1rem;
+}
+
+footer a {
+  color: #c0392b;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #a93226;
+}
+
+/* Responsive Düzenlemeler */
+@media (max-width: 1024px) {
+  #nav-menu ul {
+    flex-grow: 0;
+  }
+
+  .logo {
+    position: relative;
+    right: 0;
+    width: 80px;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #nav-menu {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #nav-menu ul {
+    justify-content: center;
+    flex-grow: 0;
+    flex-direction: column;
+  }
+
+  #nav-menu ul li {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .logo {
+    position: relative;
+    width: 70px;
+  }
+}
