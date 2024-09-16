@@ -1,0 +1,151 @@
+{
+  "ice_coffee": [
+    { "id": 1, "name": "Ice latte", "price": 115 },
+    { "id": 2, "name": "Ice americano", "price": 98 },
+    { "id": 3, "name": "Ice caramel latte", "price": 118 },
+    { "id": 4, "name": "Ice Machiatti", "price": 128 },
+    { "id": 5, "name": "Ice oreo latte", "price": 130 },
+    { "id": 6, "name": "Ice nutella latte", "price": 130 },
+    { "id": 7, "name": "Ice salted caramel", "price": 137 },
+    { "id": 8, "name": "Ice toffenut", "price": 137 },
+    { "id": 9, "name": "Ice white mocha", "price": 135 },
+    { "id": 10, "name": "Ice mocha", "price": 135 },
+    { "id": 11, "name": "Ice milky filter", "price": 95 },
+    { "id": 12, "name": "Ice raspberry latte", "price": 130 },
+    { "id": 13, "name": "Ice vanilla latte", "price": 130 },
+    { "id": 14, "name": "Ice hazelnut latte", "price": 118 },
+    { "id": 15, "name": "Ice chai tea", "price": 120 },
+    { "id": 16, "name": "Affogato", "price": 135 },
+    { "id": 17, "name": "Ice luv special", "price": 136 },
+    { "id": 18, "name": "Ice lotus latte", "price": 136 },
+    { "id": 19, "name": "Ice almond latte", "price": 130 },
+    { "id": 20, "name": "Ice pecan latte", "price": 130 },
+    { "id": 21, "name": "Ice coconut latte", "price": 130 },
+    { "id": 22, "name": "Ice blueberry", "price": 130 },
+    { "id": 23, "name": "Ice flat white", "price": 125 }
+  ],
+  "matcha_bar": [
+    { "id": 24, "name": "Strawberry matcha", "price": 145 },
+    { "id": 25, "name": "Vanilla-coconut matcha", "price": 160 },
+    { "id": 26, "name": "Matcha latte", "price": 135 },
+    { "id": 27, "name": "Mango matcha latte", "price": 150 },
+    { "id": 28, "name": "Mango coconut matcha", "price": 160 },
+    { "id": 29, "name": "Vanilla matcha latte", "price": 145 },
+    { "id": 30, "name": "Coconut milk matcha", "price": 150 },
+    { "id": 31, "name": "Almond-vanilla matcha", "price": 160 }
+  ],
+  "refresha": [
+    { "id": 32, "name": "Cool lime", "price": 135 },
+    { "id": 33, "name": "Berry habiscus", "price": 135 },
+    { "id": 34, "name": "Lemonade", "price": 135 },
+    { "id": 35, "name": "Popcorn lemonade", "price": 145 },
+    { "id": 36, "name": "Peachy refresh", "price": 135 },
+    { "id": 37, "name": "Forest refresh", "price": 135 },
+    { "id": 38, "name": "Dark-karadut frozen", "price": 138 },
+    { "id": 39, "name": "Pink frozen", "price": 138 },
+    { "id": 40, "name": "Mango-ananas frozen", "price": 138 },
+    { "id": 41, "name": "Passion frozen", "price": 138 },
+    { "id": 42, "name": "Love-seftali frozen", "price": 147 },
+    { "id": 43, "name": "Chocochip frappuchino", "price": 145 },
+    { "id": 44, "name": "Lotus frappuchino", "price": 145 },
+    { "id": 45, "name": "Vanilla frappuchino", "price": 145 },
+    { "id": 46, "name": "Frappuchino", "price": 138 },
+    { "id": 47, "name": "Strawberry cream", "price": 145 }
+  ],
+  "milkshakeler": [
+    { "id": 48, "name": "Pink milkshake", "price": 145 },
+    { "id": 49, "name": "Lotus milkshake", "price": 145 },
+    { "id": 50, "name": "Cookieschoco", "price": 145 },
+    { "id": 51, "name": "Oreochoco", "price": 145 }
+  ],
+  "bubbletea": [
+    { "id": 52, "name": "Mango sky", "price": 140 },
+    { "id": 53, "name": "Ice flat white", "price": 125 },
+    { "id": 54, "name": "Pink strawberry", "price": 140 }
+  ],
+  "kasa_onu": [
+    { "id": 55, "name": "Bar", "price": 38 },
+    { "id": 56, "name": "Vegan cookie", "price": 48 },
+    { "id": 57, "name": "Cup cookie", "price": 90 },
+    { "id": 58, "name": "Vanilla matcha latte", "price": 145 }
+  ],
+  "paket_kahveler": [
+    { "id": 59, "name": "250 gram espresso", "price": 275 },
+    { "id": 60, "name": "250 gram filtre kahve", "price": 275 }
+  ],
+  "hot_coffee": [
+    { "id": 61, "name": "Espresso single", "price": 50 },
+    { "id": 62, "name": "Espresso double", "price": 55 },
+    { "id": 63, "name": "Americano", "price": 105 },
+    { "id": 64, "name": "Cappuccino", "price": 105 },
+    { "id": 65, "name": "Cortado", "price": 80 },
+    { "id": 66, "name": "Flat white", "price": 115 },
+    { "id": 67, "name": "Latte", "price": 95 },
+    { "id": 68, "name": "Mocha", "price": 110 },
+    { "id": 69, "name": "White Mocha", "price": 110 },
+    { "id": 70, "name": "Salep", "price": 95 },
+    { "id": 71, "name": "Turkish coffee", "price": 80 },
+    { "id": 72, "name": "Double Turkish coffee", "price": 90 },
+    { "id": 73, "name": "Caramel Macchiato", "price": 125 },
+    { "id": 74, "name": "Ristretto", "price": 80 },
+    { "id": 75, "name": "Coconut latte", "price": 110 },
+    { "id": 76, "name": "Irish latte", "price": 110 },
+    { "id": 77, "name": "Pecan latte", "price": 110 },
+    { "id": 78, "name": "Chai tea", "price": 110 },
+    { "id": 79, "name": "Salted Caramel", "price": 125 },
+    { "id": 80, "name": "Caramel latte", "price": 110 },
+    { "id": 81, "name": "Lotus latte", "price": 110 },
+    { "id": 82, "name": "Raspberry latte", "price": 110 },
+    { "id": 83, "name": "Vanilla latte", "price": 110 },
+    { "id": 84, "name": "Almond latte", "price": 110 },
+    { "id": 85, "name": "Hot chocolate", "price": 110 }
+  ],
+  "filter_coffee": [
+    { "id": 86, "name": "Filter coffee large", "price": 90 },
+    { "id": 87, "name": "Filter coffee small", "price": 85 },
+    { "id": 88, "name": "Milky filter coffee", "price": 95 },
+    { "id": 89, "name": "V60-Chemex", "price": 110 },
+    { "id": 90, "name": "Iced filter", "price": 98 },
+    { "id": 91, "name": "Spada special çekirdek", "price": 25 },
+    { "id": 92, "name": "Red Eye", "price": 140 }
+  ],
+  "tatlilar": [
+    { "id": 93, "name": "Brownie tabanı cheesecake", "price": 168 },
+    { "id": 94, "name": "Beyaz çikolatalı brownie tabanı", "price": 168 },
+    { "id": 95, "name": "Frambuaz cheesecake", "price": 165 },
+    { "id": 96, "name": "Lime cheesecake", "price": 165 },
+    { "id": 97, "name": "Orman meyveli cheesecake", "price": 165 },
+    { "id": 98, "name": "Böğürtlenli cheesecake", "price": 165 },
+    { "id": 99, "name": "Brownie dondurmalı", "price": 160 },
+    { "id": 100, "name": "Donut", "price": 90 },
+    { "id": 101, "name": "Cookie", "price": 85 },
+    { "id": 102, "name": "Lotus Cookie", "price": 85 },
+    { "id": 103, "name": "Muzlu Cheesecake", "price": 165 },
+    { "id": 104, "name": "Çikolata cup", "price": 140 },
+    { "id": 105, "name": "Cookie + Americano", "price": 140 },
+    { "id": 106, "name": "Donut + Americano", "price": 145 },
+    { "id": 107, "name": "Çay + cheesecake", "price": 150 },
+    { "id": 108, "name": "Latte + cheesecake", "price": 210 }
+  ],
+  "caylar": [
+    { "id": 109, "name": "Çay", "price": 45 },
+    { "id": 110, "name": "Teaco bitki çayları", "price": 95 },
+    { "id": 111, "name": "Küçük boy çay", "price": 35 }
+  ],
+  "sandvic": [
+    { "id": 112, "name": "Cheddar-hindi fümé", "price": 110 },
+    { "id": 113, "name": "Ezine Peynirli", "price": 90 },
+    { "id": 114, "name": "Cheddar-italyan", "price": 90 },
+    { "id": 115, "name": "3 peynirli bagel", "price": 110 },
+    { "id": 116, "name": "Hindi füme bagel", "price": 110 },
+    { "id": 117, "name": "Kruvasan", "price": 70 },
+    { "id": 118, "name": "Soi Poğaça", "price": 40 }
+  ],
+  "soft_icecekler": [
+    { "id": 119, "name": "Su", "price": 20 },
+    { "id": 120, "name": "Vegan soda", "price": 95 },
+    { "id": 121, "name": "İthal soda", "price": 95 },
+    { "id": 122, "name": "Mizu", "price": 95 },
+    { "id": 123, "name": "Sade Soda", "price": 35 }
+  ]
+}
