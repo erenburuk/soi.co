@@ -1,0 +1,33 @@
+.listLayout {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 480px altında iki ürün göster */
+  gap: 2rem;
+  padding: 1rem;
+  justify-items: center; /* Kartları ortalar */
+}
+
+.productGroup {
+  display: flex;
+  flex-direction: column;
+  /* gap: 2rem; */
+}
+
+.productGroupTitle {
+  font-size: 2rem;
+  color: var(--color-dark--1);
+}
+
+@media screen and (min-width: 481px) and (max-width: 800px) {
+  .listLayout {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* 800px aralığında iki ürün göster */
+  }
+}
+
+@media screen and (min-width: 801px) {
+  .listLayout {
+    grid-template-columns: repeat(4, 1fr); /* 800px üstünde dört ürün göster */
+  }
+}
