@@ -20,7 +20,6 @@
   font-weight: 700;
 }
 
-/* Geniş ekranlarda Franchise ve Öneriler de yatayda gösterilir */
 .optionalMenu {
   display: flex;
   gap: 3rem;
@@ -59,7 +58,6 @@
   display: none;
 }
 
-/* TR | EN dil butonları hamburger ikonunun altında gösterilir */
 .languageMenu {
   display: flex;
   align-items: center;
@@ -76,7 +74,6 @@
     padding: 1rem;
   }
 
-  /* Dar ekranlarda Franchise ve Öneriler sadece hamburger menüde */
   .optionalMenu {
     display: none;
   }
@@ -101,7 +98,7 @@
   }
 
   .leftList.show {
-    height: 8rem; /* Dil butonları ve öğeler için yeterli yükseklik */
+    height: 8rem;
     opacity: 1;
   }
 
@@ -120,6 +117,12 @@
     align-items: center;
     gap: 0.5rem;
     font-size: 1.25rem;
-    margin-top: 0.5rem; /* Hamburger menü ikonunun hemen altında konumlandır */
+    margin-top: 0.5rem;
+  }
+
+  .mainList {
+    gap: 1.5rem;
+    font-size: 1.25rem;
+    font-weight: 700;
   }
 }

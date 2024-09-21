@@ -26,7 +26,6 @@ function Navbar({ language, setLanguage }) {
     setIsMenuOpen((prev) => !prev);
   };
 
-  // Seçilen dile göre metinleri dinamik olarak değiştirin
   const t = translations[language];
 
   return (
