@@ -1,14 +1,14 @@
-import { useState } from "react";
 import Card from "./Card";
 import styles from "./List.module.css";
 
-function List({ products, language, categories }) {
-  const [category, setCategory] = useState("");
-  console.log(products);
-
+function List({ products, language, categories, selectedCategory }) {
   return (
     <div>
       {Object.keys(products).map((key) => {
+        if (selectedCategory && key !== selectedCategory) {
+          return null;
+        }
+
         const categoryTitle =
           categories.find((category) => category.type === key)?.title || key;
 
@@ -28,18 +28,6 @@ function List({ products, language, categories }) {
           </div>
         );
       })}
-
-      {/* <ul className={styles.listLayout}>
-        <h2>{category}</h2>
-        {products.map((product) => (
-          <li key={product.id}>
-            <Card
-              name={language === "TR" ? product.name_tr : product.name_en}
-              price={product.price}
-            />
-          </li>
-        ))}
-      </ul> */}
     </div>
   );
 }

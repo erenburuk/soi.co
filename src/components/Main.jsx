@@ -9,12 +9,6 @@ const Main = ({ data, language, selectedCategory, setSelectedCategory }) => {
   const categoriesList =
     language === "TR" ? categories.categories_tr : categories.categories_en;
 
-  // const allProducts = Object.values(products).flat();
-
-  // const filteredProducts = selectedCategory
-  //   ? products[selectedCategory]
-  //   : products;
-
   return (
     <main>
       <Categories
@@ -23,7 +17,7 @@ const Main = ({ data, language, selectedCategory, setSelectedCategory }) => {
         setSelectedCategory={setSelectedCategory}
       />
       <List
-        // products={filteredProducts}
+        selectedCategory={selectedCategory}
         products={products}
         language={language}
         categories={categoriesList}

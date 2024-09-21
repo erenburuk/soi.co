@@ -12,12 +12,22 @@
   padding: 1.5rem 6rem;
 }
 
-.leftList {
+.mainList {
   display: flex;
   align-items: center;
   gap: 3rem;
   font-size: 1.5rem;
   font-weight: 700;
+}
+
+/* Geniş ekranlarda Franchise ve Öneriler de yatayda gösterilir */
+.optionalMenu {
+  display: flex;
+  gap: 3rem;
+}
+
+.leftList {
+  display: none;
 }
 
 .rightList {
@@ -32,8 +42,13 @@
   padding: 0;
 }
 
+.hamburgerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .hamburger {
-  display: none;
   cursor: pointer;
 }
 
@@ -41,17 +56,37 @@
   width: 3rem;
   height: 3rem;
   fill: var(--color-light--2);
+  display: none;
+}
+
+/* TR | EN dil butonları hamburger ikonunun altında gösterilir */
+.languageMenu {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.25rem;
 }
 
 @media (max-width: 720px) {
+  .hamburgerIcon {
+    display: block;
+  }
+
   .innerNav {
     padding: 1rem;
+  }
+
+  /* Dar ekranlarda Franchise ve Öneriler sadece hamburger menüde */
+  .optionalMenu {
+    display: none;
   }
 
   .leftList {
     display: flex;
     flex-direction: column;
     position: absolute;
+    text-align: center;
+    font-size: 1.5rem;
     top: 100%;
     left: 0;
     width: 100%;
@@ -66,16 +101,25 @@
   }
 
   .leftList.show {
-    height: 15rem;
+    height: 8rem; /* Dil butonları ve öğeler için yeterli yükseklik */
     opacity: 1;
+  }
+
+  .hamburgerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .hamburger {
     display: block;
   }
 
-  .rightList {
+  .languageMenu {
     display: flex;
-    gap: 1rem;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.25rem;
+    margin-top: 0.5rem; /* Hamburger menü ikonunun hemen altında konumlandır */
   }
 }
