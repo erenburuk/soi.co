@@ -39,6 +39,12 @@
 .language {
   border: 0;
   padding: 0;
+  cursor: pointer; /* Butonlar her zaman tıklanabilir */
+  color: var(--color-light--1); /* Varsayılan renk */
+}
+
+.language.active {
+  color: var(--color-brand--1); /* Seçili butonun rengi */
 }
 
 .hamburgerContainer {

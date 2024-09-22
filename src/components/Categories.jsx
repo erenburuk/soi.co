@@ -1,3 +1,4 @@
+import { Link as ScrollLink } from "react-scroll";
 import styles from "./Categories.module.css";
 
 function Categories({ categories, selectedCategory, setSelectedCategory }) {
@@ -13,13 +14,16 @@ function Categories({ categories, selectedCategory, setSelectedCategory }) {
     <div>
       <div className={styles.categories}>
         {categories.map((category) => (
-          <button
+          <ScrollLink
+            to="menu"
+            smooth={true}
+            duration={500}
+            className={styles.item}
             key={category.type}
             onClick={() => handleCategoryClick(category.type)}
-            className={styles.item}
           >
             {category.title}
-          </button>
+          </ScrollLink>
         ))}
       </div>
     </div>

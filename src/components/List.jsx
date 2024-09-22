@@ -1,9 +1,10 @@
+import { Element } from "react-scroll";
 import Card from "./Card";
 import styles from "./List.module.css";
 
 function List({ products, language, categories, selectedCategory }) {
   return (
-    <div>
+    <Element name="menu">
       {Object.keys(products).map((key) => {
         if (selectedCategory && key !== selectedCategory) {
           return null;
@@ -21,6 +22,7 @@ function List({ products, language, categories, selectedCategory }) {
                   <Card
                     name={language === "TR" ? product.name_tr : product.name_en}
                     price={product.price}
+                    image={product.image}
                   />
                 </li>
               ))}
@@ -28,7 +30,7 @@ function List({ products, language, categories, selectedCategory }) {
           </div>
         );
       })}
-    </div>
+    </Element>
   );
 }
 

@@ -40,6 +40,13 @@ li {
   list-style: none;
 }
 
+button {
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
 /* primary-red 9D1E22 */
 /* primary-soft FFFCF9 */
 /* primary-black 333333 */

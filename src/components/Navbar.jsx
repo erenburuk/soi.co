@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link as ScrollLink } from "react-scroll";
 import Logo from "./Logo";
 import styles from "./Navbar.module.css";
 
@@ -35,7 +36,9 @@ function Navbar({ language, setLanguage }) {
           <Logo />
           <div className={styles.mainList}>
             <p>{t.home}</p>
-            <p>{t.menu}</p>
+            <ScrollLink to="menu" smooth={true} duration={500}>
+              {t.menu}
+            </ScrollLink>
             <p>{t.contact}</p>
             <div className={styles.optionalMenu}>
               <p>{t.franchise}</p>
@@ -53,16 +56,18 @@ function Navbar({ language, setLanguage }) {
             <div className={styles.languageMenu}>
               <button
                 onClick={() => setLanguage("TR")}
-                disabled={language === "TR"}
-                className={styles.language}
+                className={`${styles.language} ${
+                  language === "TR" ? styles.active : ""
+                }`}
               >
                 TR
               </button>
               <span>|</span>
               <button
                 onClick={() => setLanguage("EN")}
-                disabled={language === "EN"}
-                className={styles.language}
+                className={`${styles.language} ${
+                  language === "EN" ? styles.active : ""
+                }`}
               >
                 EN
               </button>

@@ -22,7 +22,7 @@
         "type": "bubbletea"
       },
       {
-        "title": "Counter Fronts",
+        "title": "Counter Products",
         "type": "kasa_onu"
       },
       {
@@ -205,7 +205,8 @@
         "id": 16,
         "name_en": "Affogato",
         "name_tr": "Affogato",
-        "price": 135
+        "price": 135,
+        "image": "./assets/3.jpg"
       },
       {
         "id": 17,
