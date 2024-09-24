@@ -2,6 +2,10 @@
   "categories": {
     "categories_en": [
       {
+        "title": "All Products",
+        "type": "products"
+      },
+      {
         "title": "Iced Coffees",
         "type": "ice_coffee"
       },
@@ -55,6 +59,10 @@
       }
     ],
     "categories_tr": [
+      {
+        "title": "Tüm Ürünler",
+        "type": "products"
+      },
       {
         "title": "Soğuk Kahveler",
         "type": "ice_coffee"

@@ -11,9 +11,11 @@ function Homepage({
 }) {
   return (
     <div>
-      {/*
-       */}
-      <Navbar language={language} setLanguage={setLanguage} />
+      <Navbar
+        language={language}
+        setLanguage={setLanguage}
+        hideOptionalMenu={false}
+      />
       <Main
         data={data}
         language={language}

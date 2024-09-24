@@ -14,17 +14,12 @@ function App() {
 
   return (
     <div>
-      {/* <Navbar language={language} setLanguage={setLanguage} />
-      <Main
-        data={data}
-        language={language}
-        selectedCategory={selectedCategory}
-        setSelectedCategory={setSelectedCategory}
-      />
-      <Footer language={language} /> */}
       <BrowserRouter>
         <Routes>
-          <Route index element={<Homepage />} />
+          <Route
+            index
+            element={<Homepage language={language} setLanguage={setLanguage} />}
+          />
           <Route
             path="menu"
             element={

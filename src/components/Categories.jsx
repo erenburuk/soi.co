@@ -3,7 +3,7 @@ import styles from "./Categories.module.css";
 
 function Categories({ categories, selectedCategory, setSelectedCategory }) {
   const handleCategoryClick = (type) => {
-    if (selectedCategory === type) {
+    if (selectedCategory === type || type === "products") {
       setSelectedCategory("");
     } else {
       setSelectedCategory(type);

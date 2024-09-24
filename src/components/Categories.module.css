@@ -17,10 +17,6 @@
   border: none;
 }
 
-.categories > .item:last-child {
-  grid-column: span 2;
-}
-
 @media (max-width: 480px) {
   .item {
     font-size: 1.25rem;

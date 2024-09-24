@@ -12,56 +12,28 @@
   padding: 1.5rem 6rem;
 }
 
+.scrollLink,
+.navLink {
+  cursor: pointer;
+  font-size: 1.75rem;
+  font-weight: 700;
+  transition: transform 0.3s ease; /* Scale animasyonu için transition */
+}
+
+.scrollLink:hover,
+.navLink:hover {
+  transform: scale(1.1); /* Hover olduğunda %10 büyüme */
+}
+
 .mainList {
   display: flex;
   align-items: center;
   gap: 3rem;
-  font-size: 1.5rem;
-  font-weight: 700;
 }
 
 .optionalMenu {
   display: flex;
   gap: 3rem;
-}
-
-.leftList {
-  display: none;
-}
-
-.rightList {
-  display: flex;
-  align-items: center;
-  font-size: 1.25rem;
-  gap: 0.5rem;
-}
-
-.language {
-  border: 0;
-  padding: 0;
-  cursor: pointer; /* Butonlar her zaman tıklanabilir */
-  color: var(--color-light--1); /* Varsayılan renk */
-}
-
-.language.active {
-  color: var(--color-brand--1); /* Seçili butonun rengi */
-}
-
-.hamburgerContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.hamburger {
-  cursor: pointer;
-}
-
-.hamburgerIcon {
-  width: 3rem;
-  height: 3rem;
-  fill: var(--color-light--2);
-  display: none;
 }
 
 .languageMenu {
@@ -71,64 +43,41 @@
   font-size: 1.25rem;
 }
 
-@media (max-width: 720px) {
-  .hamburgerIcon {
-    display: block;
-  }
+.language {
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  color: var(--color-light--1);
+}
 
+.language.active {
+  color: var(--color-brand--1);
+}
+
+.active {
+  color: var(--color-brand--1);
+}
+
+@media (max-width: 720px) {
   .innerNav {
     padding: 1rem;
-  }
-
-  .optionalMenu {
-    display: none;
-  }
-
-  .leftList {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    text-align: center;
-    font-size: 1.5rem;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: var(--color-brand--2);
-    padding: 1rem;
-    gap: 1rem;
-    height: 0;
-    opacity: 0;
-    overflow: hidden;
-    transition: height 0.3s ease, opacity 0.3s ease;
-    border-top: 1px solid var(--color-light--1);
-  }
-
-  .leftList.show {
-    height: 8rem;
-    opacity: 1;
-  }
-
-  .hamburgerContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .hamburger {
-    display: block;
-  }
-
-  .languageMenu {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 1.25rem;
-    margin-top: 0.5rem;
   }
 
   .mainList {
     gap: 1.5rem;
     font-size: 1.25rem;
-    font-weight: 700;
+  }
+
+  .scrollLink,
+  .navLink {
+    font-size: 1.5rem;
+  }
+
+  .optionalMenu {
+    gap: 1.5rem;
+  }
+
+  .languageMenu {
+    font-size: 1rem;
   }
 }

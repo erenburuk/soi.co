@@ -1,14 +1,15 @@
+import { Link } from "react-router-dom";
 import styles from "./Logo.module.css";
 
 function Logo() {
   return (
-    <div>
+    <Link to="/">
       <img
         src="./assets/soico_logo.png"
         className={styles.logo}
         alt="Soico Logo"
-      ></img>
-    </div>
+      />
+    </Link>
   );
 }
 
