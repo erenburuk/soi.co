@@ -11,11 +11,34 @@ const Main = ({ data, language, selectedCategory, setSelectedCategory }) => {
 
   return (
     <main>
+      <div className={styles.bannerContainer}>
+        <div className={styles.iconContainer}>
+          <img
+            src="/assets/cafe-outline.svg"
+            className={styles.icon}
+            alt="Self Service Icon"
+          />
+          <h2 className={styles.text}>
+            {language === "EN" ? "Self Service" : "Self Servis"}
+          </h2>
+        </div>
+        <div className={styles.iconContainer}>
+          <img
+            src="/assets/wifi-outline.svg"
+            className={styles.icon}
+            alt="Wifi Icon"
+          />
+          <h2 className={styles.text}>
+            {language === "EN" ? "Free Wi-Fi" : " Ücretsiz Wi-Fi"}
+          </h2>
+        </div>
+      </div>
       <Categories
         categories={categoriesList}
         selectedCategory={selectedCategory}
         setSelectedCategory={setSelectedCategory}
       />
+
       <List
         selectedCategory={selectedCategory}
         products={products}
