@@ -40,7 +40,7 @@
 
 .slideshowSlider {
   white-space: nowrap;
-  transition: ease 1000ms;
+  transition: transform 0.5s ease-in-out; /* Daha pürüzsüz geçiş */
   position: relative;
   height: 100%;
 }

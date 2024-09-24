@@ -9,8 +9,14 @@ const images = [
   "slider-4.jpg",
   "slider-5.jpg",
   "slider-6.jpg",
+  "slider-7.jpg",
+  "slider-8.jpg",
+  "slider-9.jpg",
+  "slider-10.jpg",
+  "slider-11.jpg",
+  "slider-12.jpg",
 ];
-const delay = 5000;
+const delay = 4000;
 
 const translations = {
   EN: {
@@ -29,6 +35,7 @@ const translations = {
 
 export default function Slideshow({ language }) {
   const [index, setIndex] = React.useState(0);
+  const [isTransitioning, setIsTransitioning] = React.useState(true);
   const timeoutRef = React.useRef(null);
 
   const t = translations[language];
@@ -41,13 +48,16 @@ export default function Slideshow({ language }) {
 
   React.useEffect(() => {
     resetTimeout();
-    timeoutRef.current = setTimeout(
-      () =>
-        setIndex((prevIndex) =>
-          prevIndex === images.length - 1 ? 0 : prevIndex + 1
-        ),
-      delay
-    );
+
+    timeoutRef.current = setTimeout(() => {
+      if (index === images.length) {
+        setIsTransitioning(false);
+        setIndex(0);
+      } else {
+        setIsTransitioning(true);
+        setIndex((prevIndex) => prevIndex + 1);
+      }
+    }, delay);
 
     return () => {
       resetTimeout();
@@ -68,11 +78,14 @@ export default function Slideshow({ language }) {
       </div>
       <div
         className={styles.slideshowSlider}
-        style={{ transform: `translateX(${-index * 100}%)` }}
+        style={{
+          transform: `translateX(${-index * 100}%)`,
+          transition: isTransitioning ? "transform 0.5s ease" : "none",
+        }}
       >
-        {images.map((image, index) => (
-          <div className={styles.slide} key={index}>
-            <img src={`/assets/slider/${image}`} alt={`Slide ${index + 1}`} />
+        {images.concat(images[0]).map((image, idx) => (
+          <div className={styles.slide} key={idx}>
+            <img src={`/assets/slider/${image}`} alt={`Slide ${idx + 1}`} />
           </div>
         ))}
       </div>
